@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Ad-Hoc|iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MarkDownEditor.XamarinAndroid/ActivityHTML.cs">
+    <Files>
+      <File FileName="MarkDownEditor.XamarinAndroid/ActivityMarkDown.cs" Line="13" Column="1" />
+      <File FileName="MarkDownEditor.XamarinAndroid/ActivityHTML.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/moljac/Projects/HolisticWare/Xamarin-Windays14/20140401/MarkDownEditor.XamarinAndroid/ActivityHTML.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MarkDownEditor.XamarinAndroid AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.20140401.MarkDownEditor.XamarinAndroid AndroidDeviceId-Debug="emulator-5554" />
+</Properties>

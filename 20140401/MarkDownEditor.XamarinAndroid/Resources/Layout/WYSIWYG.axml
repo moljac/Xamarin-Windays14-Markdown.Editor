@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:stretchColumns="*"
+    p1:id="@+id/tableLayout1">
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="1"
+        p1:id="@+id/tableRow3">
+        <Button
+            p1:text="HTML"
+            p1:layout_column="0"
+            p1:id="@+id/buttonHTML" />
+    </TableRow>
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="1"
+        p1:id="@+id/tableRow3">
+        <TextView
+            p1:text="WYSIWYG:"
+            p1:layout_column="0"
+            p1:layout_span="2"
+            p1:id="@+id/textView4" />
+    </TableRow>
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="50"
+        p1:id="@+id/tableRow3"
+        p1:minWidth="25px"
+        p1:minHeight="25px">
+        <WebView
+            p1:layout_width="fill_parent"
+            p1:layout_height="fill_parent"
+            p1:layout_span="2"
+            p1:layout_column="0"
+            p1:id="@+id/webViewWYSIWYG" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:stretchColumns="*"
+    p1:id="@+id/tableLayout1">
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="1"
+        p1:id="@+id/tableRow3">
+        <Button
+            p1:text="HTML"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_column="1"
+            p1:id="@+id/buttonHTML"
+            p1:layout_width="fill_parent" />
+    </TableRow>
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="1"
+        p1:id="@+id/tableRow3">
+        <TextView
+            p1:text="MarkDown:"
+            p1:layout_column="0"
+            p1:layout_span="2"
+            p1:id="@+id/textView4" />
+    </TableRow>
+    <TableRow
+        p1:layout_height="0dp"
+        p1:layout_weight="50"
+        p1:id="@+id/tableRow3">
+        <EditText
+            p1:id="@+id/texBoxMarkDown"
+            p1:inputType="textMultiLine"
+            p1:layout_column="0"
+            p1:layout_span="2"
+            p1:layout_width="fill_parent"
+            p1:layout_height="fill_parent"
+            p1:scrollbars="vertical" />
+    </TableRow>
+</TableLayout>
