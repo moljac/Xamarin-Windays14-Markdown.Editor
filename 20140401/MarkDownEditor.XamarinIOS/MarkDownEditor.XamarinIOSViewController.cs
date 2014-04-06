@@ -46,10 +46,10 @@ namespace MarkDownEditor.XamarinIOS
 			base.ViewDidAppear (animated);
 		}
 
-		public override void ViewWillDisappear (bool animated)
-		{
-			base.ViewWillDisappear (animated);
-		}
+//		public override void ViewWillDisappear (bool animated)
+//		{
+//			base.ViewWillDisappear (animated);
+//		}
 
 		public override void ViewDidDisappear (bool animated)
 		{
@@ -57,6 +57,9 @@ namespace MarkDownEditor.XamarinIOS
 		}
 
 		#endregion
+		
+		
+
 	}
 }
 

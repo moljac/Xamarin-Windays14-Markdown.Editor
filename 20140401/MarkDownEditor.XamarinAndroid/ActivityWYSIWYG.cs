@@ -10,7 +10,7 @@ using Android.OS;
 namespace MarkDownEditor.XamarinAndroid
 {
 	[Activity()]
-	public class ActivityWYSIWYG : Activity
+	public partial class ActivityWYSIWYG : Activity
 	{
 
 		protected override void OnCreate(Bundle bundle)
@@ -26,36 +26,6 @@ namespace MarkDownEditor.XamarinAndroid
 			Setup();
 		}
 
-		# region	HTML
-		// ========================================================================================
-		Button 					buttonHTML = null;
-		Android.Webkit.WebView 	webViewWYSIWYG = null;
-		
-		private void Setup()
-		{
-			buttonHTML = FindViewById<Button>(Resource.Id.buttonHTML);
-			webViewWYSIWYG = FindViewById<Android.Webkit.WebView>(Resource.Id.webViewWYSIWYG);
-			
-			webViewWYSIWYG.Settings.JavaScriptEnabled = true;
-			webViewWYSIWYG.LoadDataWithBaseURL
-									(
-									  ""
-									, MarkDown.XamarinAndroid.MarkDown.ContentHTML
-									, "text/html"
-									, "UTF-8"
-									, ""
-									);
-			buttonHTML.Click += buttoHTML_Click;
-			
-			return;
-		}
-
-		void buttoHTML_Click(object sender, EventArgs e)
-		{
-			this.Finish();
-		}
-		// ========================================================================================
-		# endregion	HTML
 	}
 }
 

@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
 namespace MarkDown.XamarinAndroid
 {
@@ -26,12 +20,12 @@ namespace MarkDown.XamarinAndroid
 			markdowndeep = new MarkdownDeep.Markdown();
 		}
 
-		public static string ToHtml(string md)
+		public static string ToHtml(string md, string assemblyname)
 		{
 			ContentMarkDown = md;
 			ContentHTML = markdowndeep.Transform(md);
 
-			string html_template = HtmlTemplate();
+			string html_template = HtmlTemplate(assemblyname);
 			
 			ContentHTML =  html_template.Replace(placeholder, ContentHTML);
 
@@ -41,9 +35,8 @@ namespace MarkDown.XamarinAndroid
 		
 		static string placeholder = @"%PLACEHOLDER%";
 		
-		public static string HtmlTemplate()
+		public static string HtmlTemplate(string assemblyname)
 		{
-			string assemblyname = "MarkDown.XamarinAndroid"; // Assembly name not namespace!!!!
 			string filename = ".template.c1.x.html";
 			string resourcename = assemblyname + filename;
 

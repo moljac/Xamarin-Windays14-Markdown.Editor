@@ -52,14 +52,14 @@
       <Link>MarkDown.cs</Link>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\MarkDown.XamarinAndroid\template.c1.x.html">
-      <Link>template.c1.x.html</Link>
-    </Content>
-  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties ProjectLinkReference="9617219a-8af1-43bb-b1c1-7b867485a99a" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
+  <ItemGroup>
+    <EmbeddedResource Include="..\MarkDown.XamarinAndroid\template.c1.x.html">
+      <Link>template.c1.x.html</Link>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

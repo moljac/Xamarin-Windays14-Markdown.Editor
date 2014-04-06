@@ -19,18 +19,5 @@ namespace MarkDownEditor.XamarinIOS
 			Setup();
 			
 		}
-		
-		void Setup()
-		{
-			buttonHTML.TouchUpInside += buttonHTML_TouchUpInside;
-			
-		}
-
-		void buttonHTML_TouchUpInside (object sender, EventArgs e)
-		{
-			DismissModalViewControllerAnimated(true);
-			
-			return;
-		}
 	}
 }

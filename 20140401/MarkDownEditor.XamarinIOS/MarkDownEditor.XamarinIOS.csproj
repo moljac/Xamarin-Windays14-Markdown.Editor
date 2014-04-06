@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -97,6 +97,9 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewControllerWYSIWYG.Setup.cs" />
+    <Compile Include="ViewControllerHTML.Setup.cs" />
+    <Compile Include="MarkDownEditor.XamarinIOSViewController.Setup.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MarkDownEditor.XamarinIOSViewController.cs" />
@@ -120,5 +123,11 @@
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
     <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MarkDown.XamarinIOS\MarkDown.XamarinIOS.csproj">
+      <Project>{E573F25D-DE1E-4DC9-BC25-C97C58FA0F9E}</Project>
+      <Name>MarkDown.XamarinIOS</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="ActivityHTML.cs" />
     <Compile Include="ActivityWYSIWYG.cs" />
+    <Compile Include="ActivityHTML.Setup.cs" />
+    <Compile Include="ActivityMarkDown.Setup.cs" />
+    <Compile Include="ActivityWYSIWYG.Setup.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ActivityMarkDown.cs" />
