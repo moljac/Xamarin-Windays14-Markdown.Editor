@@ -32,6 +32,9 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\MarkDown.XamarinAndroid\Class1.cs">
+      <Link>Class1.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -43,4 +46,9 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="e438e950-d941-4921-a9d5-a324f82b4f33" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
